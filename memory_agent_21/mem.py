@@ -29,6 +29,14 @@ config = {
             "model": "gpt-4.1-mini"
         },
     },
+    "graph_store": {
+        "provider": "neo4j",
+        "config": {
+            "url": NEO4J_CONNECTION_URI,
+            "username": NEO4J_USER,
+            "password": NEO4J_PASSWORD,
+        },
+    },
     "vector_store": {
         "provider": "qdrant",
         "config": {
